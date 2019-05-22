@@ -1,0 +1,38 @@
+@font-face {
+    font-family: "uni";
+    src: url("unisans.otf");
+}
+*
+{
+padding: 0px;
+margin: 0px;
+font-family: 'uni';
+}
+body
+{
+    background-color: white;
+}
+.name
+{
+    display: flex;
+    flex-direction: row;
+}
+.name p
+{
+    margin: auto;
+    padding: 3vh 1vw;
+    font-size: 3rem;
+    color:pink;
+}
+.name p::before
+{
+    content: 'NAVJOT BANSAL';
+    position: absolute;
+    margin: -3px 3px;
+    color : #14213d;
+
+}
+.about p
+{
+    color: black;
+}
