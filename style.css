@@ -19,10 +19,10 @@ body
 }
 .name p
 {
-    margin: 2vh 0;
+    margin: 2vh auto;
     padding: 1vh 1vw;
     font-size: 2rem;
-    color: rgba(255,255,255,1);
+    color: #fe3e3e;
 }
 .about
 {   width: 60%;
@@ -50,7 +50,7 @@ body
     width: 105%;
     height: 5px;
     margin: 0 -2.5%;
-    background: red;
+    background: #fe3e3e;
     border-radius: 3px;
 }
 #info 
