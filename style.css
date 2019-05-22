@@ -10,29 +10,52 @@ font-family: 'uni';
 }
 body
 {
-    background-color: white;
+    background-color: black;
 }
 .name
-{
+{   
     display: flex;
     flex-direction: row;
 }
 .name p
 {
-    margin: auto;
-    padding: 3vh 1vw;
-    font-size: 3rem;
-    color:pink;
+    margin: 2vh 0;
+    padding: 1vh 1vw;
+    font-size: 2rem;
+    color: rgba(255,255,255,1);
 }
-.name p::before
-{
-    content: 'NAVJOT BANSAL';
-    position: absolute;
-    margin: -3px 3px;
-    color : #14213d;
-
+.about
+{   width: 60%;
+    margin: auto;
+    padding: 1vh 1vw;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .about p
 {
-    color: black;
+    position: relative;
+    width: 100%;
+    text-align: justify;
+    color: white;
+}
+#Quote
+{
+    font-size:2rem;
+    padding : 2vh 0;
+    color: rgba(255,255,255,0.95);
+}
+#line 
+{
+    width: 105%;
+    height: 5px;
+    margin: 0 -2.5%;
+    background: red;
+    border-radius: 3px;
+}
+#info 
+{   
+    color: rgba(255,255,255,0.8);
+    font-size: 1.5rem;
+    padding : 2vh 0;
 }
