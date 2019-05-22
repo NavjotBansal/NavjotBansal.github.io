@@ -59,3 +59,9 @@ body
     font-size: 1.5rem;
     padding : 2vh 0;
 }
+
+@media screen and (max-width: 600px) {
+    #Quote {
+      font-size: 1.5rem;
+    }
+  }
