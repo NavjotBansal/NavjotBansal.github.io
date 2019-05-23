@@ -13,10 +13,6 @@ body
 {
     background-color: white;
 }
-.social
-{
-    position: fixed;
-}
 .social ul
 {
     display: flex;
@@ -30,6 +26,12 @@ body
 }
 .social ul li img
 {
+    width: 40px;
+    height: 40px;
+}
+#ham img
+{
+    padding: 10px;
     width: 40px;
     height: 40px;
 }
