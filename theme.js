@@ -17,6 +17,7 @@ function changeTheme()
 {
     var body = document.querySelector("body");
     var quote = document.querySelector("#Quote");
+    var jake = document.querySelector(".jake");
     var inspiration = document.querySelector("#inspiration");
     var info = document.querySelectorAll("#info p");
     if(darkTheme)
