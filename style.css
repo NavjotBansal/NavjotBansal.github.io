@@ -136,7 +136,7 @@ body
     }
     #inspiration,#info p
     {
-        font-size: 28px;
+        font-size: 1em;
     }
     #info p::before
     {
