@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico&display=swap');
 @font-face {
     font-family: "uni";
     src: url("unisans.otf");
@@ -7,22 +8,78 @@
 padding: 0px;
 margin: 0px;
 font-family: 'uni';
+transition: all 0.3s ease-in-out;
+}
+.description
+{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background: white;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.description p 
+{
+    margin: auto;
+    font-size:2rem;
+    text-align: center;
+}
+.description p:nth-of-type(2)
+{
+    padding: 10px;
+    background:#00bfa5;
+    color: white;
 }
 body
 {
-    background-color: black;
+    background-color: white;
+    min-height: 100vh;
+}
+.social ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.social ul li
+{
+    padding: 2vh 1vw;
+}
+.social ul li img
+{
+    width: 40px;
+    height: 40px;
+}
+#ham img
+{
+    padding: 10px;
+    width: 40px;
+    height: 40px;
 }
 .name
 {   
     display: flex;
     flex-direction: row;
+    
+}
+.jake
+{
+    transition: all 0.1s linear;
 }
 .name p
 {
     margin: 2vh auto;
     padding: 1vh 1vw;
     font-size: 2rem;
-    color: #fe3e3e;
+    color: #00bfa5;
+}
+.name:hover .jake
+{
+    filter: drop-shadow(3px 2px 1px black);
 }
 .about
 {   width: 60%;
@@ -37,31 +94,73 @@ body
     position: relative;
     width: 100%;
     text-align: left;
-    color: white;
+    color: black;
 }
-#Quote
+#Quote,#inspiration
 {
     font-size:2rem;
     padding : 2vh 0;
-    color: rgba(255,255,255,0.95);
+    color: rgba(0,0,0,0.9);
+    font-family: 'Pacifico', cursive;
+}
+#inspiration
+{
+    font-family: 'uni';
+    font-size: 1rem;
+}
+#phone
+{
+    width: 30px;
+    height: 30px;
 }
 #line 
 {
     width: 105%;
     height: 5px;
     margin: 0 -2.5%;
-    background: #fe3e3e;
+    background: #00bfa5;
     border-radius: 3px;
 }
 #info 
 {   
-    color: rgba(255,255,255,0.8);
-    font-size: 1.5rem;
-    padding : 2vh 0;
+    display: flex;
+    justify-content: center;
 }
-
+#info p
+{
+    margin: auto;
+    color:  rgba(0,0,0,0.95);
+    font-size: 1.5rem;
+    padding :5px 0px;
+    transition: all 0.3s linear;
+}
+#info p::before
+{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    margin-top: 7px;
+    margin-left: -2vw;
+    border-radius: 50%;
+    background: #00bfa5;
+    filter: drop-shadow(3px 0 0 #006776);
+    transition: all 0.1s linear;    
+}
+#info p:hover::before
+{
+    filter: none;
+}
 @media screen and (max-width: 600px) {
-    #Quote {
+    #Quote{
       font-size: 1.5rem;
+    }
+    #inspiration,#info p
+    {
+        font-size: 20px;
+    }
+    #info p::before
+    {
+        margin-left:-4.5vw;
     }
   }
