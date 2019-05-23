@@ -75,7 +75,7 @@ body
     height: 15px;
     width: 15px;
     margin-top: 7px;
-    margin-left: -2rem;
+    margin-left: -2vw;
     border-radius: 50%;
     background: #00bfa5;
     filter: drop-shadow(3px 0 0 #006776);
@@ -92,5 +92,9 @@ body
 @media screen and (max-width: 600px) {
     #Quote {
       font-size: 1.5rem;
+    }
+    #info p::before
+    {
+        margin-left:-4vw;
     }
   }
