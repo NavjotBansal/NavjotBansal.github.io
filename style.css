@@ -131,11 +131,15 @@ body
     color: #006776;
 }
 @media screen and (max-width: 600px) {
-    #Quote,#inspiration {
+    #Quote{
       font-size: 1.5rem;
+    }
+    #inspiration,#info p
+    {
+        font-size: 0.5rem;
     }
     #info p::before
     {
-        margin-left:-4vw;
+        margin-left:-4.5vw;
     }
   }
