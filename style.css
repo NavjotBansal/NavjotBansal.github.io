@@ -13,10 +13,35 @@ body
 {
     background-color: white;
 }
+.social
+{
+    position: fixed;
+}
+.social ul
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.social ul li
+{
+    padding: 2vh 1vw;
+}
+.social ul li img
+{
+    width: 40px;
+    height: 40px;
+}
 .name
 {   
     display: flex;
     flex-direction: row;
+    
+}
+.jake
+{
+    transition: all 0.1s linear;
 }
 .name p
 {
@@ -24,6 +49,10 @@ body
     padding: 1vh 1vw;
     font-size: 2rem;
     color: #00bfa5;
+}
+.name:hover .jake
+{
+    filter: drop-shadow(3px 2px 1px black);
 }
 .about
 {   width: 60%;
@@ -40,12 +69,22 @@ body
     text-align: left;
     color: black;
 }
-#Quote
+#Quote,#inspiration
 {
     font-size:2rem;
     padding : 2vh 0;
     color: rgba(0,0,0,0.8);
     font-family: 'Pacifico', cursive;
+}
+#inspiration
+{
+    font-family: 'uni';
+    font-size: 1rem;
+}
+#phone
+{
+    width: 30px;
+    height: 30px;
 }
 #line 
 {
@@ -90,7 +129,7 @@ body
     color: #006776;
 }
 @media screen and (max-width: 600px) {
-    #Quote {
+    #Quote,#inspiration {
       font-size: 1.5rem;
     }
     #info p::before
