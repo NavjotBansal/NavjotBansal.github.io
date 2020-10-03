@@ -13,17 +13,8 @@
 <div class="navbar">
 	<span id="logo">
 		<img src="Logo.jpg">
-		<!-- <p><span id="logotitle">Jalpurti Pipes</span> -->
-			<!-- <br> PVT. LTD.</p> -->
 	</span>
 	<span id="navitems">
-		<ul>
-			<li>HOME</li>
-			<li>ABOUT</li>
-			<li>DEALERS</li>
-			<li>PRODUCTS</li>
-			<li>CONTACT</li>
-		</ul>
 	</span>
 </div>
 <div class="bodycontainer">
@@ -54,12 +45,7 @@ Nam metus ligula, iaculis eu purus at, euismod hendrerit lorem. Quisque eget auc
 		<div id="columnhead">
 			<h3>Navigation</h3>
 		</div>
-		<ul id="footeritems">
-			<li>HOME</li>
-			<li>ABOUT</li>
-			<li>DEALERS</li>
-			<li>PRODUCTS</li>
-			<li>CONTACT</li>			
+		<ul  class="footernavigation" id="footeritems">
 		</ul>
 	</div>
 	<div>
@@ -81,6 +67,21 @@ Nam metus ligula, iaculis eu purus at, euismod hendrerit lorem. Quisque eget auc
 	var body = document.body;
 	var html = document.documentElement;
 	var nav = document.querySelector(".navbar");
+
+	/* populating navbar & footer navigation*/
+	var navItems = document.querySelector("#navitems");
+	var footerItems = document.querySelector("ul#footeritems.footernavigation");
+	var unorderedList = document.createElement("ul");
+	var navItemsList = [{text:"HOME",url:"#"},{text:"ABOUT US",url:"#"},{text:"DEALERS",url:"#"},{text:"PRODUCTS",url:"#"},{text:"CONTACT US",url:"#"}];
+	for(var i=0;i<navItemsList.length;i++)
+	{
+		unorderedList.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
+		footerItems.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
+	}
+	console.log(footeritems.innerHTML);
+	navitems.appendChild(unorderedList);
+	/* populating navbar & footer navigation ends */
+
 	var bodycontainer = document.querySelector(".bodycontainer");
 	bodycontainer.style.marginTop = nav.offsetHeight+"px";
 	window.onscroll = function()
