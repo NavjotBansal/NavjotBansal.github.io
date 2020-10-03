@@ -184,6 +184,7 @@ body
 	padding: 0 10px;
 	overflow: hidden;
 	height: 297px;
+	width: 297px;
 	background-image: url("product_image.jpg");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -271,6 +272,16 @@ body
 	#navitems
 	{
 		display: none;
+	}
+	.products
+	{
+		flex-direction: column;
+	}
+	#carditem
+	{
+		padding: 0px;
+		width: 200px;
+		height: 200px;
 	}
 	.footer
 	{
