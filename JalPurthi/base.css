@@ -202,13 +202,31 @@ body
 #footeritems li
 {
 	padding: 0.3rem 0;
+	color: #00000096;
 	font-weight: bold;
 	font-size: 0.9rem;
 }
 
 @media (max-width: 800px)
 {
+	#logo img
+	{
+		width: 6rem;
+		height: 3rem;
+	}
 	#navitems
+	{
+		display: none;
+	}
+	.footer
+	{
+		flex-direction: column;
+	}
+	.footer div
+	{
+		text-align: center;
+	}
+	#columnhead:after,#columnhead h3:after
 	{
 		display: none;
 	}
