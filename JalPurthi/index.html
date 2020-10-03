@@ -30,7 +30,41 @@ Nam metus ligula, iaculis eu purus at, euismod hendrerit lorem. Quisque eget auc
 	</div>
 	<span id="head"><p>Products</p></span>
 	<div class="products">
-
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
 	</div>
 </div>	
 <div class="footer">
@@ -81,6 +115,15 @@ Nam metus ligula, iaculis eu purus at, euismod hendrerit lorem. Quisque eget auc
 	console.log(footeritems.innerHTML);
 	navitems.appendChild(unorderedList);
 	/* populating navbar & footer navigation ends */
+
+
+	/* readmore onclick */
+	var readMore = document.querySelector("#readmore");
+	readmore.addEventListener("click",function()
+	{
+		window.location.replace("about.html");
+	})	
+	/* readmore onclick ends*/
 
 	var bodycontainer = document.querySelector(".bodycontainer");
 	bodycontainer.style.marginTop = nav.offsetHeight+"px";
