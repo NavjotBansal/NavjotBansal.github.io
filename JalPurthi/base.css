@@ -132,9 +132,27 @@ body
 }
 #columnhead
 {
-	border-bottom: 1px solid #0152a1;
+	/*border-bottom: 1px solid #0152a1;*/
 	padding: 5px;
 	text-transform: uppercase;
+}
+#columnhead:after
+{
+	content: " ";
+	display: block;
+	height: 2px;
+	width: 100%;
+	margin-top: 2px;
+	background: #0152a1;
+}
+#columnhead h3:after
+{
+	content: " ";
+	display: block;
+	height: 2px;
+	width: 100%;
+	margin-top: 5px;
+	background: #0152a1;
 }
 #footeritems
 {
