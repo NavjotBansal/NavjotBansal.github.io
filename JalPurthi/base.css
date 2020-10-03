@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@342&display=swap');
+*
+{
+	padding: 0px;
+	margin: 0px;
+	font-family: 'Work Sans', sans-serif;
+}
+body
+{	
+}
+.navbar
+{
+	/*width: 100vw;*/
+	position: fixed;
+	z-index: 10;
+	left:0;
+	top:0;
+	width: calc(100% - 5.33334rem);
+	min-height: 70px;
+	margin-top: 0px;
+	background: white;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	padding:0 2.66667rem;
+	transition: all 0.5s linear;
+}
+#logo
+{
+	padding: 5px 0;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	transition: all 0.3s linear;
+}
+#logo img
+{
+	width: 6rem;
+	height: 3rem;
+}
+#logo p
+{
+	font-weight: bold;
+	font-size: 0.6rem;
+}
+#logotitle
+{
+	font-size: 	1rem;
+}
+#navitems ul
+{
+	list-style: none;
+	display: flex;
+	flex-direction: row;
+}
+#navitems ul li
+{
+	font-size: 0.9rem;
+	font-weight: bold;
+	padding: 10px 15px;
+	margin: 0px 10px;
+	cursor: pointer;
+	color: #444;
+	transition: all 0.2s linear;
+	border-radius: 5px;
+}
+#navitems ul li:after
+{
+	display: block;
+	content: " ";
+	width: 0%;
+	height: 3px;
+	margin-top: 3px;
+	background: #0152A1;
+	transform-origin: 0 0 0;
+	transition: all 0.15s linear;
+}
+#navitems ul li:hover::after
+{
+	width: 100%;
+} 
+.bodycontainer
+{
+	padding: 2% 1%;
+	/*background: purple;*/
+}
+.about
+{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	background: white;
+}
+.about:hover #image
+{
+	filter: grayscale(0.2);
+}
+#image,#content
+{
+	display: flex;
+	flex-direction: column;
+	padding: 2% 3%;
+	transition: all 0.5s linear;
+}
+#title
+{	
+	display: inline-block;
+	text-decoration: underline;
+	transition: all 1s linear;
+	width: auto;
+	padding: 2% 1%;
+	font-weight: bold;
+	font-size: 1.4rem;
+}
+#info
+{
+	font-size: 1.1rem;
+	color: rgba(0,0,0,0.7);
+	font-weight: bold;
+}
+.footer
+{
+	background: #f0f4ff;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+.footer div
+{
+	margin-top: 1.5vh;
+}
+#columnhead
+{
+	border-bottom: 1px solid #0152a1;
+	padding: 5px;
+	text-transform: uppercase;
+}
+#footeritems
+{
+	margin-top: 2vh;
+	display: flex;
+	flex-direction:column;
+	list-style: none;
+}
+#footeritems li
+{
+	padding: 0.3rem 0;
+	font-weight: bold;
+	font-size: 0.9rem;
+}
+
+@media (max-width: 800px)
+{
+	#navitems
+	{
+		display: none;
+	}
+}
