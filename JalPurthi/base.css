@@ -36,8 +36,8 @@ body
 }
 #logo img
 {
-	width: 6rem;
-	height: 3rem;
+	width: 8rem;
+	height: 4rem;
 }
 #logo p
 {
@@ -85,15 +85,35 @@ body
 	padding: 2% 1%;
 	/*background: purple;*/
 }
+#head
+{
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-align: center;
+	display: flex;
+	margin: 3vh 0;
+}
+#head:first-child
+{
+	margin-top: 0px;
+}
+#head p
+{
+	border-bottom: 3px solid #0152a1;
+	margin:auto;
+	padding: 5px;
+	text-transform: uppercase;
+}
 #readmore 
 {
 	align-self: flex-start;
 	font-weight: bold;
 	text-transform: uppercase;
-	margin-top: 2vh;
 	cursor: pointer;
-	background: #0152a1;
-	color: white;
+	background: white;
+	color: #0152a1; 
+	margin:auto;
+	margin-top: 2vh;
 	/*border: 1px solid red;*/
 }
 #readmore p
@@ -105,7 +125,11 @@ body
 	display: flex;
 	flex-direction: row;
 	align-items: center;
+	text-align: center;
 	background: white;
+	background: url("aboutimage.jpg");
+	background-size: cover;
+	color: white;
 }
 .about:hover #image
 {
@@ -127,12 +151,12 @@ body
 	padding: 2% 1%;
 	font-weight: bold;
 	font-size: 1.4rem;
+	align-self: flex-start;
+	margin:auto;
 }
 #info
 {
 	font-size: 1.1rem;
-	color: rgba(0,0,0,0.7);
-	font-weight: bold;
 }
 .footer
 {
@@ -147,7 +171,6 @@ body
 }
 #columnhead
 {
-	/*border-bottom: 1px solid #0152a1;*/
 	padding: 5px;
 	text-transform: uppercase;
 }
