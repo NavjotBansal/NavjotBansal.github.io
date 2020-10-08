@@ -5,8 +5,36 @@
 	margin: 0px;
 	font-family: 'Work Sans', sans-serif;
 }
+:root
+{
+	/*color*/
+	--blue: #0152a1;
+	--lightblue: #65c6ef;
+	--white: #ffffff; 
+	--gray: #f0f4ff;
+
+	/*fontsize*/
+	--smText: 0.64rem;
+    --mdText: 0.8rem;
+    --lgText: 1rem;
+    --xlText: 1.25rem;
+    --smHeading: 1.563rem;
+    --mdHeading: 1.953rem;
+    --lgHeading: 2.441rem;
+    --xlHeading: 3.052rem;
+
+      /* spacing */
+	  --smPadding: 0.5rem;
+	  --mdPadding: 1rem;
+	  --lgPadding: 1.5rem;
+	  --smMargin: 0.5rem;
+	  --mdMargin: 1rem;
+	  --lgMargin: 1.5rem;
+	  --xlMargin: 2rem;
+}
 body
 {	
+	background-size: contain;
 }
 .navbar
 {
@@ -56,7 +84,7 @@ body
 }
 #navitems ul li
 {
-	font-size: 0.9rem;
+	font-size: var(--mdText);
 	font-weight: bold;
 	padding: 10px 15px;
 	margin: 0px 10px;
@@ -77,7 +105,7 @@ body
 	width: 0%;
 	height: 3px;
 	margin-top: 3px;
-	background: #0152A1;
+	background: var(--blue);
 	transform-origin: 0 0 0;
 	transition: all 0.15s linear;
 }
@@ -87,12 +115,12 @@ body
 } 
 .bodycontainer
 {
-	padding: 2% 1%;
+	padding: 0% 1%;
 	/*background: purple;*/
 }
 #head
 {
-	font-size: 1.5rem;
+	font-size: var(--smHeading);
 	font-weight: bold;
 	text-align: center;
 	display: flex;
@@ -123,7 +151,11 @@ body
 }
 #readmore p
 {
-	padding: 5px;
+	background: var(--white);
+	padding: var(--smPadding);
+	color: var(--blue);
+	font-weight: 700;
+	/* padding: 5px; */
 }
 .about
 {
@@ -132,9 +164,10 @@ body
 	align-items: center;
 	text-align: center;
 	background: white;
-	background: url("aboutimage.jpg");
+	/*background: url("aboutimage.jpg");*/
 	background-size: cover;
 	color: white;
+	background-image: linear-gradient(to bottom right,var(--blue),var(--lightblue));
 }
 .about:hover #image
 {
@@ -150,18 +183,21 @@ body
 #title
 {	
 	display: inline-block;
-	text-decoration: underline;
+	/*text-decoration: underline;*/
 	transition: all 1s linear;
 	width: auto;
 	padding: 2% 1%;
 	font-weight: bold;
-	font-size: 1.4rem;
+	font-size: var(--lgHeading);
 	align-self: flex-start;
 	margin:auto;
 }
 #info
 {
-	font-size: 1.1rem;
+	font-size: var(--lgText);
+	margin:auto;
+	width: 65%;
+	padding: var(--mdPadding);
 }
 .products
 {
@@ -204,6 +240,10 @@ body
 	color: white;
 	font-weight: bold;
 	margin: auto;
+}
+#carditem:hover
+{
+	filter: grayscale(50%);
 }
 #carditem:hover #productid
 {
