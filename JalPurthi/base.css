@@ -86,37 +86,28 @@ body
 {
 	font-size: var(--mdText);
 	font-weight: bold;
-	padding: 10px 15px;
+	padding: 6px 2px;
 	margin: 0px 10px;
 	cursor: pointer;
 	color: #444;
 	transition: all 0.2s linear;
 	border-radius: 5px;
 }
+#navitems ul li a:hover
+{
+	background: var(--blue);
+	color: white;
+}
 #navitems ul li a
 {
 	text-decoration: none;
 	color: black;
+	padding: 8px;
 }
-#navitems ul li:after
-{
-	display: block;
-	content: " ";
-	width: 0%;
-	height: 3px;
-	margin-top: 3px;
-	background: var(--blue);
-	transform-origin: 0 0 0;
-	transition: all 0.15s linear;
-}
-#navitems ul li:hover::after
-{
-	width: 100%;
-} 
+ 
 .bodycontainer
 {
 	padding: 0% 1%;
-	/*background: purple;*/
 }
 #head
 {
@@ -363,5 +354,9 @@ body
 	#columnhead:after,#columnhead h3:after
 	{
 		display: none;
+	}
+	.rights p
+	{
+		margin: auto;
 	}
 }
