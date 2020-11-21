@@ -85,11 +85,11 @@ Nam metus ligula, iaculis eu purus at, euismod hendrerit lorem. Quisque eget auc
 				<h3>Corporate Office / Regd. Office</h3>
 			</div>
 			<ul id="footeritems">
-				<li>Finolex Cables Ltd.<br>
-					26-27, Mumbai-Pune Road, Pimpri,<br>
-					Pune - 411 018.<br>
-					+91-20-27475963<br>
-					CIN L31300MH1967PLC016531<br>
+				<li>CORPORATE OFFICE: 1st Floor, Dharmik Bhavan, <br>Next to Davaai Market, Agrasen Square,<br> Nagpur - 440002 <br>
+					Location: <br>
+					MANUFACTURING UNIT: C-105, MIDC Umred,<br> Umred - 441203 <br>
+					Location: 
+
 				</li>
 			</ul>
 		</div>	
@@ -108,7 +108,7 @@ Nam metus ligula, iaculis eu purus at, euismod hendrerit lorem. Quisque eget auc
 	var navItems = document.querySelector("#navitems");
 	var footerItems = document.querySelector("ul#footeritems.footernavigation");
 	var unorderedList = document.createElement("ul");
-	var navItemsList = [{text:"HOME",url:"#"},{text:"ABOUT US",url:"#"},{text:"DEALERS",url:"#"},{text:"PRODUCTS",url:"#"},{text:"CONTACT US",url:"#"}];
+	var navItemsList = [{text:"HOME",url:"index.html"},{text:"ABOUT US",url:"about.html"},{text:"PRODUCTS",url:"#"},{text:"CONTACT US",url:"contact.html"}];
 	for(var i=0;i<navItemsList.length;i++)
 	{
 		unorderedList.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
@@ -121,10 +121,13 @@ Nam metus ligula, iaculis eu purus at, euismod hendrerit lorem. Quisque eget auc
 
 	/* readmore onclick */
 	var readMore = document.querySelector("#readmore");
-	readmore.addEventListener("click",function()
+	if(readMore!=null)
 	{
-		window.location.replace("about.html");
-	})	
+		readmore.addEventListener("click",function()
+		{
+			window.location.replace("about.html");
+		})
+	}	
 	/* readmore onclick ends*/
 
 	var bodycontainer = document.querySelector(".bodycontainer");

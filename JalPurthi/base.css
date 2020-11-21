@@ -147,7 +147,7 @@ body
 	padding: var(--smPadding);
 	font-weight: 700;
 }
-.about
+.about,.office_info
 {
 	display: flex;
 	flex-direction: row;
@@ -170,11 +170,11 @@ body
 	flex-direction: column;
 	padding: 2% 3%;
 	transition: all 0.5s linear;
+	margin: auto;
 }
 #title
 {	
 	display: inline-block;
-	/*text-decoration: underline;*/
 	transition: all 1s linear;
 	width: auto;
 	padding: 2% 1%;
@@ -182,6 +182,8 @@ body
 	font-size: var(--lgHeading);
 	align-self: flex-start;
 	margin:auto;
+	padding-bottom: 0.5%;
+	border-bottom: 2px dotted white;
 }
 #info
 {
@@ -322,6 +324,47 @@ body
 	
 	padding: 2%;
 }
+
+
+/* contacts */
+#info_contact
+{
+	font-size: var(--lgText);
+	margin:auto;
+	padding: var(--mdPadding);
+	text-align: left;
+	color: rgba(255,255,255,0.9);
+	line-height: 1.5rem;
+	border-bottom: 2px solid white;
+}
+#info_contact a
+{
+	text-decoration: none;
+	color: rgba(255,255,255,0.8);
+	display: flex;
+}
+#info_contact a img
+{
+	margin: 0% 1%;
+}
+#branch
+{
+	font-size: var(--xlText);
+	color: white;
+
+}
+#deadler_info
+{
+	background: var(--gray);
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+#deadler_info #title
+{
+	color:var(--blue);
+}
+/* contacts ends */
 @media (max-width: 800px)
 {
 	#logo img

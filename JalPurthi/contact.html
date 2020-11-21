@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="#website description">
+<meta name="keywords" content="#website SEO">
+<meta name="author" content="Navjot Bansal">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jalpurti</title>
+<link type="text/css" rel="stylesheet" href="base.css">
+</head>
+<body>
+<div class="navbar">
+	<span id="logo">
+		<img src="Logo.jpg">
+	</span>
+	<span id="navitems">
+	</span>
+</div>
+<div class="bodycontainer">
+	<div class="contact">
+		<div class="office_info">
+		<span id="content">
+			<p id="title">Contact Us</p>
+			<div id="location">
+				<p id="info_contact">
+					<span id="branch">BRANCH OFFICE : Nagpur</span><br>
+					CORPORATE OFFICE: 1st Floor, Dharmik Bhavan,<br>Next to Davaai Market, Agrasen Square,<br> Nagpur - 440002 <br>
+					Location: <br>
+					MANUFACTURING UNIT: C-105, MIDC Umred,<br>Umred - 441203 <br>
+					Location: 
+				</p>
+				<p id="info_contact">
+					<a href="tel:+1-303-499-7111">
+					<img src="phone.png">
+					+91-9999999999
+					</a>
+				</p>
+				<p id="info_contact">
+					<a href="mailto: nannana@gmail.com">
+					<img src="mail.png">
+					nananana@gmail.com
+					</a>
+				</p>
+			</div>
+		</span>
+		</div>
+		<div id="deadler_info">
+			<p id="title">Reach out to Dealers</p>
+		</div>
+	</div>
+</div>
+<div class="footer">
+		<div>
+			<div id="columnhead">
+				<h3 id="footerlogo">Jalpurti™  Pipes</h3>
+			</div>
+			<ul id="footeritems">
+				<li>All rights reserved ®</li>			
+			</ul>	</div>
+		<div>
+			<div id="columnhead">
+				<h3>Navigation</h3>
+			</div>
+			<ul  class="footernavigation" id="footeritems">
+			</ul>
+		</div>
+		<div>
+			<div id="columnhead">
+				<h3>Corporate Office / Regd. Office</h3>
+			</div>
+			<ul id="footeritems">
+				<li>CORPORATE OFFICE: 1st Floor, Dharmik Bhavan, <br>Next to Davaai Market, Agrasen Square,<br> Nagpur - 440002 <br>
+					Location: <br>
+					MANUFACTURING UNIT: C-105, MIDC Umred,<br> Umred - 441203 <br>
+					Location: 
+
+				</li>
+			</ul>
+		</div>	
+	</div>	
+	<div class="rights">
+		<p>© 2020 Jalpurti. All rights reserved.</p>
+	</div>
+</body>
+<script type="text/javascript">
+	/* scroll distance */
+	var body = document.body;
+	var html = document.documentElement;
+	var nav = document.querySelector(".navbar");
+
+	/* populating navbar & footer navigation*/
+	var navItems = document.querySelector("#navitems");
+	var footerItems = document.querySelector("ul#footeritems.footernavigation");
+	var unorderedList = document.createElement("ul");
+	var navItemsList = [{text:"HOME",url:"index.html"},{text:"ABOUT US",url:"about.html"},{text:"PRODUCTS",url:"#"},{text:"CONTACT US",url:"contact.html"}];
+	for(var i=0;i<navItemsList.length;i++)
+	{
+		unorderedList.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
+		footerItems.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
+	}
+	console.log(footeritems.innerHTML);
+	navitems.appendChild(unorderedList);
+	/* populating navbar & footer navigation ends */
+
+
+	/* readmore onclick */
+	var readMore = document.querySelector("#readmore");
+	if(readMore!=null)
+	{
+		readmore.addEventListener("click",function()
+		{
+			window.location.replace("about.html");
+		})	
+	}
+	/* readmore onclick ends*/
+
+	var bodycontainer = document.querySelector(".bodycontainer");
+	bodycontainer.style.marginTop = nav.offsetHeight+"px";
+	window.onscroll = function()
+	{
+		if(html.scrollTop>0 || body.scrollTop>0)
+		{
+			nav.style.boxShadow="0px 1px 5px #999";
+		}
+		else
+		{
+				nav.style.boxShadow="none";
+		}
+	}
+</script>
+</html>
