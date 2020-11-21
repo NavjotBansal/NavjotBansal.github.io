@@ -367,6 +367,15 @@ body
 /* contacts ends */
 @media (max-width: 800px)
 {
+	#title
+	{
+		font-size: var(--xlText);
+	}
+	#info,#info_contact,#info_contact span
+	{
+		font-size: var(--mdText);
+	}
+
 	#logo img
 	{
 		width: 6rem;
