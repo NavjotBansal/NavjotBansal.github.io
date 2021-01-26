@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="#website description">
+<meta name="keywords" content="#website SEO">
+<meta name="author" content="Navjot Bansal">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jalpurti</title>
+<link type="text/css" rel="stylesheet" href="base.css">
+</head>
+<body>
+<div class="navbar">
+	<span id="logo">
+		<img src="Logo.jpg">
+	</span>
+	<span id="navitems">
+	</span>
+</div>
+<div class="bodycontainer">
+	<div class="abouthead">
+			<div id="rowhead">About</div>
+			<div>We, at Jalpurti Pipes are committed to exceeding customer expectations with producing high quality products at the cheapest price.
+			</div>
+	</div>
+	<div class="imagecontainer">
+		<img src="industry.jpg">
+	</div>
+	<div class="abouthead">
+			<div id="rowhead">We Shall proactively</div>
+			<div>Adopt Zero Defect Culture through continual improvement.
+				Strive for Zero Accidents and Incidents through engaging and consulting work-force and stakeholders.
+				Strive for achieving Zero Energy Loss by providing necessary resource to achieve the Energy Targets & Usage of Energy efficient products and equipment.
+				Product Environment, Prevent Pollution, Provide Safe and Healthy Working conditions by eliminating Hazards and OHS Risks.
+				Sustain the Environment, Safety & Energy requirements through fulfilment of Compliance Obligations.
+			</div>
+	</div>
+	<div class="vision">
+		<div>
+			<span id="visionhead">Vision</span>
+			<span>We aim to be a truly global, high-performing Organisation delivering quality products and services to its customers and attain leadership position in the industries we operate in.
+			</span>
+		</div>
+		<div>
+			<span id="visionhead">Mission</span>
+			<span>Jalpurti Pipes is on a mission to provide clean water for everyone and everywhere; from the smallest villages to the largest cities. We are committed towards constant innovations in plumbing, irrigation and sewerage technologies to meet the world’s constantly increasing water demands.
+			</spana>
+		</div>
+		<div>
+			<span id="visionhead">Values</span>
+			<span>
+				<ul>
+					<li><span style="font-weight:bold">Customer Commitment:</span> We believe in building long-term relationships & delighting our customers with exceptional service.</li>
+					<li><span style="font-weight:bold">Quality:</span> Deliver high quality products and services to our customers, exceeding their expectations.</li>
+					<li><span style="font-weight:bold">Integrity:</span> We uphold the highest standard of integrity in our actions & services. Operate in letter and spirit of the highest standards of corporate ethics.</li>
+					<li><span style="font-weight:bold">Equitability & Respect:</span> Accept criticism and promote an open culture that enables sharing of ideas across the organization. We respect & appreciate all individuals and cultural identities. We embrace the differences. We ensure a harmonious working environment for all our employees.</li>
+					<li><span style="font-weight:bold">Lean Manufacturing:</span> Minimal wastage and maximum recycling.</li>
+				</ul>
+			</span>
+		</div>
+	</div>
+</div>
+<div class="footer">
+		<div>
+			<div id="columnhead">
+				<h3 id="footerlogo">Jalpurti™  Pipes</h3>
+			</div>
+			<ul id="footeritems">
+				<li>All rights reserved ®</li>			
+			</ul>	</div>
+		<div>
+			<div id="columnhead">
+				<h3>Navigation</h3>
+			</div>
+			<ul  class="footernavigation" id="footeritems">
+			</ul>
+		</div>
+		<div>
+			<div id="columnhead">
+				<h3>Corporate Office / Regd. Office</h3>
+			</div>
+			<ul id="footeritems">
+				<li>CORPORATE OFFICE: 1st Floor, Dharmik Bhavan, <br>Next to Davaai Market, Agrasen Square,<br> Nagpur - 440002 <br>
+					Location: <br>
+					MANUFACTURING UNIT: C-105, MIDC Umred,<br> Umred - 441203 <br>
+					Location: 
+				</li>
+			</ul>
+		</div>	
+	</div>	
+	<div class="rights">
+		<p>© 2020 Jalpurti. All rights reserved.</p>
+	</div>
+</body>
+<script type="text/javascript">
+	/* scroll distance */
+	var body = document.body;
+	var html = document.documentElement;
+	var nav = document.querySelector(".navbar");
+
+	/* populating navbar & footer navigation*/
+	var navItems = document.querySelector("#navitems");
+	var footerItems = document.querySelector("ul#footeritems.footernavigation");
+	var unorderedList = document.createElement("ul");
+	var navItemsList = [{text:"HOME",url:"index.html"},{text:"ABOUT US",url:"about.html"},{text:"PRODUCTS",url:"#"},{text:"CONTACT US",url:"contact.html"}];
+	for(var i=0;i<navItemsList.length;i++)
+	{
+		unorderedList.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
+		footerItems.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
+	}
+	console.log(footeritems.innerHTML);
+	navitems.appendChild(unorderedList);
+	/* populating navbar & footer navigation ends */
+
+
+	/* readmore onclick */
+	var readMore = document.querySelector("#readmore");
+	if(readMore!=null)
+	{
+		readmore.addEventListener("click",function()
+		{
+			window.location.replace("about.html");
+		})	
+	}
+	/* readmore onclick ends*/
+
+	var bodycontainer = document.querySelector(".bodycontainer");
+	bodycontainer.style.marginTop = nav.offsetHeight+"px";
+	window.onscroll = function()
+	{
+		if(html.scrollTop>0 || body.scrollTop>0)
+		{
+			nav.style.boxShadow="0px 1px 5px #999";
+		}
+		else
+		{
+				nav.style.boxShadow="none";
+		}
+	}
+</script>
+</html>

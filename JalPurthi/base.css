@@ -392,6 +392,86 @@ body
 	padding: 2% 0px;
 }
 /* contacts ends */
+/*about*/
+.abouthead
+{
+	/*! background-color: #d6d6d6; */
+	display: flex;
+	flex-direction: row;
+	width: 85%;
+	/*justify-content: space-between;*/
+	font-weight: bold;
+	font-size: var(--lgText);
+	text-align: left;
+	justify-content: left;
+	margin: 4vh auto;
+}
+.abouthead:first-child
+{
+	margin-top: 14vh;
+}
+#rowhead
+{
+	font-size: var(--smHeading);
+	text-transform: uppercase;
+	font-weight: bold;
+	color: black;
+}
+.abouthead div
+{
+	flex-basis: 100%;
+	font-weight: normal;
+	line-height: 2rem;
+	color: rgba(0,0,0,0.8);
+}
+.imagecontainer
+{
+	width: 90%;
+	margin: 5vh auto;
+}
+.imagecontainer img
+{
+	width: 100%;
+	object-fit: fill;
+}
+.vision
+{
+	display: flex;
+	flex-direction: column;
+	margin: 2vh auto;
+	width: 90%;
+}
+.vision div
+{	
+	display: flex;
+	flex-direction: column;
+	font-size: var(--lgText);
+	margin-top: 1vh auto;
+	padding: 1%;
+	color: rgba(0,0,0,0.8);
+	border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.vision #visionhead
+{
+	font-weight: bold;
+	font-size: var(--xlText);
+	margin: 1vh 0;
+	color: var(--blue);
+}
+.vision ul
+{
+	list-style: none;
+}
+.vision ul li
+{
+	padding: 5px 0;
+	color: rgba(0,0,0,0.8);
+}
+.vision ul li span
+{
+	color: black;
+}
+/*about ends*/
 @media (max-width: 800px)
 {
 	#title
@@ -442,5 +522,9 @@ body
 	{
 		flex-basis: 100%;
 		margin: 1% 0%;
+	}
+	.abouthead
+	{
+		flex-direction: column;
 	}
 }
