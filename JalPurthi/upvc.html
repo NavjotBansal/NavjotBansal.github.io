@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="#website description">
+<meta name="keywords" content="#website SEO">
+<meta name="author" content="Navjot Bansal">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>Jalpurti</title>
+<link type="text/css" rel="stylesheet" href="base.css">
+</head>
+<style type="text/css">
+	.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+}
+table
+{
+	width: 80vw;
+	margin: auto;
+}
+table, tr, th, td {
+    border:1px black;
+}
+td {
+    background: #e6f4fd;
+    font-size: var(--mdText);
+    text-align: center;
+}
+th {
+    background: var(--lightblue);
+}
+</style>
+<body>
+<div class="navbar">
+	<span id="logo">
+		<img src="Logo.jpg">
+	</span>
+	<span id="navitems">
+	</span>
+</div>
+<div class="bodycontainer">
+	<div class="product_carousal">
+	</div>
+	<div class="hightlight">
+	</div>
+
+<!-- 	<div class="about">
+		<span id="content">
+			<p id="title">JALPURTI</p>
+			<p id="info">We, at Jalpurti Pipes are committed to exceeding customer expectations with producing high quality products at the cheapest price.
+<br>
+We Shall proactively:
+Adopt Zero Defect Culture through continual improvement.
+Strive for Zero Accidents and Incidents through engaging and consulting work-force and stakeholders.
+Strive for achieving Zero Energy Loss by providing necessary resource to achieve the Energy Targets & Usage of Energy efficient products and equipment.
+<br>
+Product Environment, Prevent Pollution, Provide Safe and Healthy Working conditions by eliminating Hazards and OHS Risks.
+Sustain the Environment, Safety & Energy requirements through fulfilment of Compliance Obligations.
+</p>
+		<span id="readmore"><p>readmore</p></span>
+		</span>
+	</div>
+	<span id="head"><p>Products</p></span>
+	<div class="products">
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+		<div class="cardwrapper">
+			<div id="carditem">
+				<span id="productid"><p>Hello</p></span>
+			</div>
+		</div>
+	</div>
+	<div>
+			<table class="table table-bordered shadow">
+                <tbody>
+                    <tr>
+                        <th><b>VARIANTS</b></th>
+                        <th><b>SIZES AVAILABLE</b></th>
+                        <th><b>PIPE</b></th>
+                        <th><b>FITTINGS</b></th>
+                    </tr> 
+                    <tr>
+                        <td>Schedule 40</td>
+                        <td><sup>1</sup>⁄<sub>2</sub>” – 4”</td>
+                        <td>ASTM D 1785</td>
+                        <td>ASTM D 2466</td>
+                    </tr>
+                    <tr>
+                        <td>Schedule 80</td>
+                        <td><sup>1</sup>⁄<sub>2</sub>” – 4”</td>
+                        <td>ASTM D 1785</td>
+                        <td>ASTM D 2467</td>
+                    </tr>
+                </tbody>
+            </table>
+		</div> -->
+	<div class="footer">
+		<div>
+			<div id="columnhead">
+				<h3 id="footerlogo">Jalpurti™  Pipes</h3>
+			</div>
+			<ul id="footeritems">
+				<li>All rights reserved ®</li>			
+			</ul>	</div>
+		<div>
+			<div id="columnhead">
+				<h3>Navigation</h3>
+			</div>
+			<ul  class="footernavigation" id="footeritems">
+			</ul>
+		</div>
+		<div>
+			<div id="columnhead">
+				<h3>Corporate Office / Regd. Office</h3>
+			</div>
+			<ul id="footeritems">
+				<li>CORPORATE OFFICE: 1st Floor, Dharmik Bhavan, <br>Next to Davaai Market, Agrasen Square,<br> Nagpur - 440002 <br>
+					Location: <br>
+					MANUFACTURING UNIT: C-105, MIDC Umred,<br> Umred - 441203 <br>
+					Location: 
+
+				</li>
+			</ul>
+		</div>	
+	</div>	
+	<div class="rights">
+		<p>© 2020 Jalpurti. All rights reserved.</p>
+	</div>
+</div>	
+	<script type="text/javascript">
+	/* scroll distance */
+	var body = document.body;
+	var html = document.documentElement;
+	var nav = document.querySelector(".navbar");
+
+	/* populating navbar & footer navigation*/
+	var navItems = document.querySelector("#navitems");
+	var footerItems = document.querySelector("ul#footeritems.footernavigation");
+	var unorderedList = document.createElement("ul");
+	var navItemsList = [{text:"HOME",url:"index.html"},{text:"ABOUT US",url:"about.html"},{text:"PRODUCTS",url:"#"},{text:"CONTACT US",url:"contact.html"}];
+	for(var i=0;i<navItemsList.length;i++)
+	{
+		unorderedList.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
+		footerItems.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
+	}
+	console.log(footeritems.innerHTML);
+	navitems.appendChild(unorderedList);
+	var bodycontainer = document.querySelector(".bodycontainer");
+	bodycontainer.style.marginTop = nav.offsetHeight+"px";
+	window.onscroll = function()
+	{
+		if(html.scrollTop>0 || body.scrollTop>0)
+		{
+			nav.style.boxShadow="0px 1px 5px #999";
+		}
+		else
+		{
+				nav.style.boxShadow="none";
+		}
+	}
+	/* populating navbar & footer navigation ends */
+
+
+</script>
+</body>
+</html>

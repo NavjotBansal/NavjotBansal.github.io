@@ -156,7 +156,7 @@ body
 	background: white;
 	padding: 2%;
 	/*background: url("aboutimage.jpg");*/
-	background-size: cover;
+	background-size: contain;
 	color: white;
 	background-image: linear-gradient(to bottom right,var(--blue),var(--lightblue));
 }
@@ -200,6 +200,7 @@ body
 	align-items: center;
 	flex-wrap: wrap;
 	margin: auto;
+	align-content: center;
 }
 .cardwrapper
 {
@@ -210,13 +211,13 @@ body
 {
 	display: flex;
 	align-items: center;
-	padding: 0 10px;
-	overflow: hidden;
 	height: 297px;
 	width: 297px;
-	background-image: url("product_image.jpg");
+	overflow: hidden;
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: contain;
+	background-size: 100% 100%;
 }
 #productid
 {
@@ -397,18 +398,23 @@ body
 {
 	/*! background-color: #d6d6d6; */
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
+	justify-content: center;
 	width: 85%;
 	/*justify-content: space-between;*/
 	font-weight: bold;
 	font-size: var(--lgText);
-	text-align: left;
-	justify-content: left;
+	justify-content: center;
+	text-align: center;
 	margin: 4vh auto;
 }
 .abouthead:first-child
 {
 	margin-top: 14vh;
+}
+.abouthead ul 
+{
+	text-align: left;
 }
 #rowhead
 {
@@ -417,10 +423,11 @@ body
 	font-weight: bold;
 	color: black;
 }
-.abouthead div
+.abouthead span,.abouthead div
 {
 	flex-basis: 100%;
 	font-weight: normal;
+	font-size: var(--mdText)
 	line-height: 2rem;
 	color: rgba(0,0,0,0.8);
 }
@@ -438,6 +445,7 @@ body
 {
 	display: flex;
 	flex-direction: column;
+	text-align: center;
 	margin: 2vh auto;
 	width: 90%;
 }
@@ -451,7 +459,7 @@ body
 	color: rgba(0,0,0,0.8);
 	border-bottom: 1px solid rgba(0,0,0,0.1);
 }
-.vision #visionhead
+.vision #visionhead,#visionhead
 {
 	font-weight: bold;
 	font-size: var(--xlText);
@@ -470,6 +478,10 @@ body
 .vision ul li span
 {
 	color: black;
+}
+.vision ul li
+{
+	text-align: left;
 }
 /*about ends*/
 @media (max-width: 800px)

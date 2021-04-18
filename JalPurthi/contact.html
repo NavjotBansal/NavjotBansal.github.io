@@ -125,7 +125,7 @@
 	var navItems = document.querySelector("#navitems");
 	var footerItems = document.querySelector("ul#footeritems.footernavigation");
 	var unorderedList = document.createElement("ul");
-	var navItemsList = [{text:"HOME",url:"index.html"},{text:"ABOUT US",url:"about.html"},{text:"PRODUCTS",url:"#"},{text:"CONTACT US",url:"contact.html"}];
+	var navItemsList = [{text:"HOME",url:"index.html"},{text:"ABOUT US",url:"about.html"},{text:"PRODUCTS",url:"index.html#producthead"},{text:"CONTACT US",url:"contact.html"}];
 	for(var i=0;i<navItemsList.length;i++)
 	{
 		unorderedList.innerHTML+= '<li> <a href="'+navItemsList[i].url+'">'+navItemsList[i].text+'</a></li>';
