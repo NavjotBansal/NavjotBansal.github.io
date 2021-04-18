@@ -529,6 +529,29 @@ body
 {
 	text-align: left;
 }
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: top;
+}
+table
+{
+	width: 80vw;
+	margin: auto;
+}
+table, tr, th, td {
+    border:1px black;
+}
+td {
+    background: #e6f4fd;
+    font-size: var(--mdText);
+    text-align: center;
+    padding: 5px;
+    font-weight: bold;
+}
+th {
+	padding: 5px;
+    background: var(--lightblue);
+}
 /*about ends*/
 @media (max-width: 800px)
 {
@@ -592,5 +615,9 @@ body
 	#prodtitle
 	{
 		font-size: var(--xlText);
+	}
+	table
+	{
+		width: 95vw;
 	}
 }
