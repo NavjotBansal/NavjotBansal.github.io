@@ -112,19 +112,26 @@ body
 .productcontainer
 {
 	margin: auto;
-	width: 80%;
 }
 .productcontainer div
 {
 	display: flex;
 	flex-direction: column;
-	/*text-align: center;*/
+	text-align: center;
 	padding: 1.5% 0;
+	font-size: var(--lgText);
+	width: 80%;
+	margin: auto;
 }
 #highlightinfo
 {
 	display: flex;
 	flex-direction: row;
+}
+#highlightinfo div
+{
+	display: flex;
+	flex-basis: 80%;	
 }
 #highlightinfo ul
 {
@@ -145,7 +152,6 @@ body
 .productcontainer div ul
 {
 	list-style-type: lower-alpha;
-	width: 90%;
 	text-align: left;
 	line-height: 2rem;
 }
