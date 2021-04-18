@@ -589,4 +589,8 @@ body
 	{
 		flex-direction: column;
 	}
+	#prodtitle
+	{
+		font-size: var(--xlText);
+	}
 }
