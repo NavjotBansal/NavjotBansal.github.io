@@ -30,8 +30,10 @@ td {
     font-size: var(--mdText);
     text-align: center;
     padding: 5px;
+    font-weight: bold;
 }
 th {
+	padding: 5px;
     background: var(--lightblue);
 }
 </style>
@@ -43,12 +45,89 @@ th {
 	<span id="navitems">
 	</span>
 </div>
-<div class="bodycontainer">
-	<div class="product_carousal">
+<div class="productcontainer">
+	<div id="carousal">
 	</div>
-	<div class="hightlight">
+	<div>
+		<span id="prodtitle">
+			Highlight of the Products
+		</span>
+		<div id="highlightinfo">
+			<div>
+				<img src="./products/icons/SWR Pipes & Fitting.jpg">
+			</div>
+			<div>
+				<ul>
+					<li>Perfect solution for discharge of soil, waste and rain water</li>
+ 					<li>Ventilation</li>	
+					<li> Available in 2 variants-Ring fit and Solvent cement jointing </li>
+					<li> Fast and easy jointing </li>
+				</ul>
+			</div>
+			<div>
+				<ul>
+				<li>100% Leak-free joints</li>
+				<li>U V stabilised</li>
+ 				<li>Wide range of fittings</li>
+ 				<li>Pipes manufactured as per IS:13592 and fittings as per IS:14735 </li>
+ 				</ul>
+			</div>
+		</div>
 	</div>
-
+	<div>
+		<span id="prodtitle">
+			Product Availability and Standards
+		</span>
+		<table>
+                <tbody>
+                    <tr>
+                        <th><b>VARIANTS</b></th>
+                        <th><b>SIZES AVAILABLE</b></th>
+                        <th><b>PIPE</b></th>
+                        <th><b>FITTINGS</b></th>
+                    </tr>
+                    <tr>
+                        <td>Type A – Ring fit</td>
+                        <td>75, 110, 160 mm</td>
+                        <td rowspan="2">IS:13592:2013</td>
+                        <td rowspan="2">IS:14735:1999</td>
+                    </tr>
+                    <tr>
+                        <td>Type A – Selfit</td>
+                        <td>40, 50, 75, 90, 110, 160 mm</td>
+                    </tr>
+                    <tr>
+                        <td>Type B – Ring fit</td>
+                        <td>75, 110, 160 mm</td>
+                        <td rowspan="2">IS:13592:2013</td>
+                        <td rowspan="2">IS:14735:1999</td>
+                    </tr>
+                    <tr>
+                        <td>Type B – Selfit</td>
+                        <td>40, 50, 63, 75, 90, 110, 160 mm</td>
+					</tr>
+			</tbody>
+			</table>
+	</div>
+	<div>
+		<span id="prodtitle">
+			Advantages of truflo swr piping system
+		</span>
+		<div>
+		<ul>
+			<li>UV stabilized.</li>
+			<li>Light weight-The low weight of the system makes it easy to install and reduces transportation, handling and installation costs.</li>
+			<li>Smooth internal finish, no scale, no corrosion resulting in better flow rates</li>
+			<li>100% recyclable</li>
+			<li>Complete SWR range of pipes and fittings-75, 90, 110 and 160 mm</li>
+			<li>Accurate dimensions, ensuring perfect fit and leak free joints</li>
+			<li>Ring fit joint allows for thermal expansion and contraction of pipe</li>
+			<li>Unmatched strength and performance, high operating life</li>
+			<li>Fast installation</li>
+			<li>Cost-effective</li>
+		</ul>
+		</div>
+	</div>
 <!-- 	<div class="about">
 		<span id="content">
 			<p id="title">JALPURTI</p>
@@ -127,6 +206,7 @@ Sustain the Environment, Safety & Energy requirements through fulfilment of Comp
                 </tbody>
             </table>
 		</div> -->
+	</div>
 	<div class="footer">
 		<div>
 			<div id="columnhead">
@@ -178,7 +258,7 @@ Sustain the Environment, Safety & Energy requirements through fulfilment of Comp
 	}
 	console.log(footeritems.innerHTML);
 	navitems.appendChild(unorderedList);
-	var bodycontainer = document.querySelector(".bodycontainer");
+	var bodycontainer = document.querySelector(".productcontainer");
 	bodycontainer.style.marginTop = nav.offsetHeight+"px";
 	window.onscroll = function()
 	{
