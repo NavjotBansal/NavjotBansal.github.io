@@ -655,4 +655,9 @@ th {
 	{
 		padding: 0%;
 	}
+	.productcontainer
+	{
+		width: 100%;
+		overflow-x: scroll;
+	}
 }
