@@ -603,6 +603,10 @@ th {
 	{
 		flex-direction: column;
 	}
+	.cardwrapper
+	{
+		margin: 10px auto;
+	}
 	#carditem
 	{
 		padding: 0px;
