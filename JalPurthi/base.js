@@ -33,6 +33,11 @@ var body = document.body;
 	{
 		bodycontainer.style.marginTop = nav.offsetHeight+"px";	
 	}
+	var productcontainer = document.querySelector(".productcontainer");
+	if(productcontainer!=null)
+	{
+		productcontainer.style.marginTop = nav.offsetHeight+"px";	
+	}
 	window.onscroll = function()
 		{
 			if(html.scrollTop>0 || body.scrollTop>0)
