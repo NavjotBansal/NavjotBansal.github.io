@@ -205,6 +205,15 @@ body
 	/*background: url("aboutimage.jpg");*/
 	background-size: contain;
 	color: white;
+	/*background-image: linear-gradient(to bottom right,var(--blue),var(--lightblue));*/
+}
+.about video
+{
+	width: 80vw;
+	margin: auto;
+}
+.office_info
+{
 	background-image: linear-gradient(to bottom right,var(--blue),var(--lightblue));
 }
 .about:hover #image
@@ -269,6 +278,7 @@ body
 	background-position: center;
 	background-size: contain;
 	background-size: 100% 100%;
+	margin:auto;
 	/*box-shadow: 0px 1px 5px 0px #888;*/
 }
 
@@ -610,8 +620,8 @@ th {
 	#carditem
 	{
 		padding: 0px;
-		width: 200px;
-		height: 200px;
+		width: 150px;
+		height: 150px;
 	}
 	.footer
 	{
@@ -637,6 +647,11 @@ th {
 	.abouthead
 	{
 		flex-direction: column;
+	}
+	.about video
+	{
+		width: 100vw;
+		margin: auto;
 	}
 	#highlightinfo
 	{
