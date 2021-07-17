@@ -646,7 +646,10 @@ th {
 	{
 		font-size: var(--mdText);
 	}
-
+	#navitems,.bg
+	{
+		width: 50%;
+	}
 	#logo img
 	{
 		width: 6rem;
