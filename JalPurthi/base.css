@@ -108,7 +108,7 @@ body
 	position: fixed;
 	display: flex;
 	flex-direction: row;
-	margin-top: -100%;
+	margin-top: -200%;
 	transition: all 0.15s cubic-bezier(0, 0, 0.2, 1);
 }
 #navitems
@@ -651,10 +651,6 @@ th {
 	{
 		width: 6rem;
 		height: 3rem;
-	}
-	#navitems
-	{
-		display: none;
 	}
 	.products
 	{
