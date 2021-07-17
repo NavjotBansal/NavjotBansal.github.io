@@ -6,6 +6,10 @@
 	font-family: 'Oxygen', sans-serif;
 	font-family: 'Roboto', sans-serif;
 }
+html
+{
+	scroll-behavior: smooth;
+}
 :root
 {
 	/*color*/
@@ -76,35 +80,78 @@ body
 {
 	font-size: 	1rem;
 }
-#navitems ul
+#navbutton
 {
-	list-style: none;
+	width: 30px;
+	height: 50px;
+	display: flex;
+	/* align-items: center; */
+	justify-content: center;
+	flex-direction: column;
+	margin: auto 0;
+}
+.icon-bar {
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #aaa;
+  transition: .3s;
+}
+.icon-bar + .icon-bar {
+  margin-top: 5px;
+}
+.navigation
+{
+	width: 100%;
+	height: 100%;
+	z-index: 10;
+	position: fixed;
 	display: flex;
 	flex-direction: row;
+	margin-top: -100%;
+	transition: all 0.15s cubic-bezier(0, 0, 0.2, 1);
+}
+#navitems
+{
+	width: 30%;
+	height: 100%;
+	background: white;
+}
+#navitems ul
+{
+	display: flex;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	flex-direction: column;
+	list-style: none;
 }
 #navitems ul li
 {
-	font-size: var(--mdText);
-	font-weight: bold;
-	padding: 6px 2px;
-	margin: 0px 10px;
-	cursor: pointer;
-	color: #444;
-	transition: all 0.2s linear;
-	border-radius: 5px;
-}
-#navitems ul li a:hover
-{
-	background: var(--blue);
-	color: white;
-}
+	padding: 15px;
+	text-align: center;
+} 
 #navitems ul li a
 {
 	text-decoration: none;
-	color: black;
-	padding: 8px;
+	color: gray;
+	font-weight: bold;
+	font-size: var(--xlText);
+} 
+#navitems ul li:hover
+{
+	background: var(--blue);
 }
- 
+#navitems ul li:hover a
+{
+	color:white;
+} 
+.bg
+{
+	width: 70%;
+	height: 100%;
+	background: rgba(100,100,100,0.6);
+}
 .bodycontainer,.productcontainer
 {
 	padding: 0% 1%;

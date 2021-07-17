@@ -27,16 +27,24 @@ var body = document.body;
 		})	
 	}
 	/* readmore onclick ends*/
-
+	var navoffset = 0;
+	var aboutcontainer = document.querySelector(".about");
+	if(aboutcontainer!=null)
+	{
+		aboutcontainer.style.marginTop = nav.offsetHeight+"px";
+		navoffset = nav.offsetHeight;
+	}
 	var bodycontainer = document.querySelector(".bodycontainer");
 	if(bodycontainer!=null)
 	{
-		bodycontainer.style.marginTop = nav.offsetHeight+"px";	
+		bodycontainer.style.marginTop = nav.offsetHeight+"px";
+		navoffset = nav.offsetHeight;
 	}
 	var productcontainer = document.querySelector(".productcontainer");
 	if(productcontainer!=null)
 	{
-		productcontainer.style.marginTop = nav.offsetHeight+"px";	
+		productcontainer.style.marginTop = nav.offsetHeight+"px";
+		navoffset = nav.offsetHeight;
 	}
 	window.onscroll = function()
 		{
@@ -49,3 +57,31 @@ var body = document.body;
 					nav.style.boxShadow="none";
 			}
 		}
+	var navbutton = document.querySelector("#navbutton")
+	var navigation = document.querySelector(".navigation");
+	var background = document.querySelector(".bg");
+	isclosed = true;
+	navbutton.addEventListener("click",function(){
+		if(isclosed)
+		{
+			if(navoffset==0)
+				navigation.style.marginTop="0%"
+			else
+				navigation.style.marginTop=-1*navoffset+"px";
+		}
+		else
+			navigation.style.marginTop="-100%";
+		isclosed=!isclosed;
+	});
+	background.addEventListener("click",function(){
+		if(isclosed)
+		{
+			if(navoffset==0)
+				navigation.style.marginTop="0%"
+			else
+				navigation.style.marginTop=-1*navoffset+"px";
+		}
+		else
+			navigation.style.marginTop="-100%";
+		isclosed=!isclosed;
+	});
