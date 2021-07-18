@@ -70,7 +70,7 @@ var body = document.body;
 				navigation.style.marginTop=-1*navoffset+"px";
 		}
 		else
-			navigation.style.marginTop="-100vh";
+			navigation.style.marginTop="-200vh";
 		isclosed=!isclosed;
 	});
 	background.addEventListener("click",function(){
@@ -82,6 +82,6 @@ var body = document.body;
 				navigation.style.marginTop=-1*navoffset+"px";
 		}
 		else
-			navigation.style.marginTop="-100vh";
+			navigation.style.marginTop="-200vh";
 		isclosed=!isclosed;
 	});
