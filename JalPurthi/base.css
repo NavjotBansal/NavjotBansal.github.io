@@ -108,7 +108,7 @@ body
 	position: fixed;
 	display: flex;
 	flex-direction: row;
-	margin-top: -300%;
+	margin-top: -100vh;
 	transition: all 0.15s cubic-bezier(0, 0, 0.2, 1);
 }
 #navitems
@@ -241,7 +241,7 @@ body
 	padding: var(--smPadding);
 	font-weight: 700;
 }
-.about,.office_info
+.about
 {
 	display: flex;
 	flex-direction: row;
@@ -258,10 +258,6 @@ body
 {
 	width: 80vw;
 	margin: auto;
-}
-.office_info
-{
-	background-image: linear-gradient(to bottom right,var(--blue),var(--lightblue));
 }
 .about:hover #image
 {
@@ -455,6 +451,88 @@ body
 
 
 /* contacts */
+.contact
+{
+	width: 100%;
+	display: flex;
+	height: 100%;
+	/* justify-content: center; */
+}
+.input_form
+{
+	width: 60%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+	justify-content: center;
+}
+.input_form form
+{
+  width: 100%;
+  height: 100%;
+  /*background: #e6e6e6;*/
+  padding: 20px 20px;
+  border-radius: 8px;
+  /*box-shadow: 0 0 40px -10px #000;*/
+  /*max-width: calc(100vw - 40px);*/
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.input_form form p
+{
+	font-weight: bold;
+	padding: 1%;
+	font-size: var(--lgText);
+}
+.input_form form input,.input_form form select,.input_form form select option
+{
+	padding: 1%;
+}
+.input_form span
+{
+	margin-top: 2%;
+}
+#sendmail
+{
+	background: var(--blue);
+	font-weight: bold;
+	color: white;
+	font-size: var(--lgText);
+	padding: 1% 5%;
+	/*width: 15%;*/
+	border: none;
+	border-radius: 5%;
+	cursor: pointer;
+}
+.office_info
+{
+	width: 40%;
+	display: flex;
+	flex-direction: column;
+	background-image: linear-gradient(to bottom right,var(--blue),var(--lightblue));
+	color: white;
+}
+.office_info span
+{
+	padding: 10px 10px;
+}
+#office_title
+{
+	padding: 2% 3%;
+	font-weight: bold;
+	font-size: var(--smHeading);
+}
+iframe
+{
+	border: 0px;
+	width: 90%;
+	padding: 2% 3%;
+}
 #info_contact
 {
 	font-size: var(--lgText);
@@ -725,4 +803,13 @@ th {
 		width: 100%;
 		overflow-x: scroll;
 	}
+	.contact
+	{
+		flex-direction: column;
+	}
+	.input_form,.office_info
+	{
+		width: 100%;
+	}
+
 }
