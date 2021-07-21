@@ -713,6 +713,13 @@ th {
     font-size: var(--lgText);
     font-weight: normal !important;
 }
+.designer
+{
+	display: flex;
+	justify-content: center;
+	color: gray;
+	font-size: var(--mdText)
+}
 /*about ends*/
 @media (max-width: 800px)
 {
